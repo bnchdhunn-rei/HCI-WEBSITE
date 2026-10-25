@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Agustin | Hotel Management</title>
+  
+  
+  
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">CASA<span> AGUSTIN</span></a>
+    <nav><a href="#home">Home</a><a href="#rooms">Rooms</a><a href="#gallery">Gallery</a><a href="#booking">Book a room</a><a href="#contact">Contact</a></nav>
+    <button class="outline-button" id="loginOpen">Log in</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow">WELCOME TO CASA AGUSTIN</p><h1>Your next stay<br>starts <em>here.</em></h1><p class="intro">Comfortable rooms, thoughtful details, and a warm welcome every time. Make yourself at home at Casa Agustin.</p><a class="primary-button link-button" href="#booking">Book your stay <span>↗</span></a></div>
+      <div class="hero-photo" role="img" aria-label="Warm and comfortable hotel bedroom"><div class="photo-note"><span>YOUR HOME AWAY FROM HOME</span><strong>Stay a little longer.</strong></div></div>
+    </section>
+
+    <section class="section" id="rooms">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR COMFORT</p><h2>Rooms made for you</h2></div><p class="muted">Choose a room that fits your trip.</p></div>
+      <div class="room-card">
+        <div class="room-photo" role="img" aria-label="Deluxe hotel room"></div>
+        <div class="room-info"><div class="room-top"><span class="pill">POPULAR CHOICE</span><span class="rating">★ 4.8 guest rating</span></div><h3>Deluxe Room</h3><p class="muted">A relaxing room with a cozy bed and space for family or friends.</p><div class="room-facts"><span>♧ 3–5 guests</span><span>▧ 1 room</span><span>✓ Wi-Fi included</span></div><div class="room-bottom"><p><strong>₱1,000</strong> <span class="muted">/ night</span></p><button class="primary-button" id="bookDeluxe">Choose room</button></div></div>
+      </div>
+      <div class="room-card extra-room-card"><div class="room-photo standard-photo" role="img" aria-label="Standard hotel room"></div><div class="room-info"><div class="room-top"><span class="pill">SIMPLE & COMFORTABLE</span><span class="rating">STANDARD ROOM</span></div><h3>Standard Room</h3><p class="muted">A practical, cozy space for guests who want a comfortable place to rest.</p><div class="room-facts"><span>♧ 1–2 guests</span><span>▧ 1 room</span><span>✓ Wi-Fi included</span></div><div class="room-bottom"><p><strong>₱1,500</strong> <span class="muted">/ night</span></p><button class="primary-button choose-room" data-room="Standard Room">Choose room</button></div></div></div>
+      <div class="room-card extra-room-card"><div class="room-photo family-photo" role="img" aria-label="Family hotel room"></div><div class="room-info"><div class="room-top"><span class="pill">ROOM FOR EVERYONE</span><span class="rating">FAMILY ROOM</span></div><h3>Family Room</h3><p class="muted">Extra space for families or groups travelling together.</p><div class="room-facts"><span>♧ 4–6 guests</span><span>▧ 1 room</span><span>✓ Wi-Fi included</span></div><div class="room-bottom"><p><strong>₱2,500</strong> <span class="muted">/ night</span></p><button class="primary-button choose-room" data-room="Family Room">Choose room</button></div></div></div>
+    </section>
+
+    <section class="section gallery-section" id="gallery"><div class="section-heading"><div><p class="eyebrow">A LOOK AROUND</p><h2>Explore Casa Agustin</h2></div><p class="muted">Relax, recharge, and feel at home.</p></div><div class="photo-gallery"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80" alt="Hotel exterior and swimming pool"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80" alt="Hotel swimming pool"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Comfortable hotel bedroom"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Hotel room interior"></div></section>
+
+    <section class="section" id="quick-info"><div class="section-heading"><div><p class="eyebrow">QUICK INFORMATION</p><h2>Helpful guest widgets</h2></div><p class="muted">A few useful details before your stay.</p></div><div class="widget-grid"><article class="info-widget"><span class="widget-icon"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span><strong>Check-in & check-out</strong><p>Check-in starts at 2:00 PM. Please choose your dates in the booking form.</p></article><article class="info-widget"><span class="widget-icon"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5A15 15 0 0 1 22 8.5M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0M12 19h.01"/></svg></span><strong>Guest comfort</strong><p>Wi-Fi is included with every room option listed on this page.</p></article><article class="info-widget"><span class="widget-icon"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19a19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 2.8a2 2 0 0 1-.6 1.8L7.7 9.6a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 1.8-.6l2.8.5a2 2 0 0 1 1.7 2.7Z"/></svg></span><strong>Need assistance?</strong><p>Use the contact details below if you have questions about your stay.</p></article></div></section>
+
+    <section class="section" id="amenities"><div class="section-heading"><div><p class="eyebrow">THE LITTLE EXTRAS</p><h2>Made for a comfortable stay</h2></div><p class="muted">Simple comforts for every guest.</p></div><div class="stats-grid"><div class="stat-card"><span>✦</span><strong>Free Wi-Fi</strong><small>Stay connected during your visit</small></div><div class="stat-card"><span>☕</span><strong>Relaxing spaces</strong><small>Unwind after a busy day</small></div><div class="stat-card"><span>⌂</span><strong>Room choices</strong><small>Options for solo guests and families</small></div><div class="stat-card"><span>♡</span><strong>Warm welcome</strong><small>Friendly hospitality from arrival</small></div></div></section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-intro"><p class="eyebrow">YOUR STAY, YOUR WAY</p><h2>Plan your stay.</h2><p>Choose your room and dates to see your estimated stay total.</p><div class="mini-detail"><span class="mini-icon">✦</span><div><strong id="selectedRoomLabel">Deluxe Room</strong><p id="selectedRoomFacts">₱1,000 per night · 3–5 guests</p></div></div></div>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-title"><h3>Make a reservation</h3><span class="step">01 / BOOKING</span></div>
+        <label for="guestName">Full name</label><input id="guestName" name="guestName" placeholder="Enter your full name" autocomplete="name" minlength="2" maxlength="80" pattern="[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ .'-]*" title="Enter a valid name using letters, spaces, apostrophes, periods, or hyphens." required>
+        <label for="roomType">Room type</label><select id="roomType"><option value="Deluxe Room">Deluxe Room — ₱1,000/night</option><option value="Standard Room">Standard Room — ₱1,500/night</option><option value="Family Room">Family Room — ₱2,500/night</option></select>
+        <div class="two-col"><div><label for="checkIn">Check-in</label><input type="date" id="checkIn" required aria-describedby="availabilityNote"></div><div><label for="checkOut">Check-out</label><input type="date" id="checkOut" required aria-describedby="availabilityNote"></div></div>
+        <p class="calendar-note" id="availabilityNote">Choose your dates to check availability. Dates already booked for the selected room cannot be selected.</p>
+        <div class="two-col"><div><label for="guests">Number of guests</label><select id="guests"><option>3</option><option>4</option><option>5</option></select></div><div><label for="arrivalTime">Arrival time</label><select id="arrivalTime"><option>2:00 PM</option><option>3:00 PM</option><option>4:30 PM</option><option>6:00 PM</option></select></div></div>
+        <label for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required>
+        <label for="phone">Contact number</label><input type="tel" id="phone" name="phone" placeholder="09XXXXXXXXX or +639XXXXXXXXX" autocomplete="tel" inputmode="tel" pattern="(?:09\d{9}|\+639\d{9})" title="Enter a valid Philippine mobile number, such as 09171234567 or +639171234567." maxlength="13" required>
+        <div class="total-row"><div><span class="muted">Estimated total</span><strong id="totalPrice">₱1,000</strong></div><span class="muted" id="nightCount">1 night</span></div><div class="price-breakdown" id="priceBreakdown" aria-live="polite"><span>Room rate</span><strong id="priceRate">₱1,000 × 1 night</strong><span>Additional fees</span><strong>₱0.00</strong><span class="price-breakdown-total">Estimated total</span><strong class="price-breakdown-total" id="priceBreakdownTotal">₱1,000</strong></div>
+        <button class="primary-button full-button" type="submit">Review reservation <span>→</span></button>
+        <p class="form-note">Demo only · No payment will be collected.</p>
+        <div class="message" id="bookingMessage" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="admin-section" id="admin">
+      <button class="outline-button admin-back" id="backToSite" type="button">← Back to guest website</button>
+      <div class="section-heading"><div><p class="eyebrow">HOTEL MANAGEMENT</p><h2>Admin overview</h2></div><span class="pill">ADMIN DASHBOARD</span></div>
+      <div class="stats-grid"><div class="stat-card"><span>Room types</span><strong>3</strong><small>Standard, Deluxe, Family</small></div><div class="stat-card"><span>Room stock</span><strong>12 <small>rooms</small></strong><small>Sample inventory</small></div><div class="stat-card"><span>Room rates</span><strong>₱1,000+</strong><small>Per night</small></div><div class="stat-card"><span>Reservations</span><strong id="reservationCount">0</strong><small>Saved in this browser</small></div></div>
+      <div class="admin-tabs" role="tablist" aria-label="Admin sections"><button class="admin-tab active" type="button" data-panel="historyPanel">History</button><button class="admin-tab" type="button" data-panel="stocksPanel">Stocks</button><button class="admin-tab" type="button" data-panel="billsPanel">Bills</button></div>
+      <div class="table-card admin-panel" id="historyPanel"><div class="table-heading"><h3>Booking history</h3><button class="text-button" id="clearBookings">Clear demo records</button></div><div class="admin-filters"><label for="bookingSearch">Search reservations</label><input id="bookingSearch" type="search" placeholder="Search guest, room, or dates"><label for="bookingStatusFilter">Status</label><select id="bookingStatusFilter"><option value="all">All statuses</option><option value="Confirmed">Confirmed</option><option value="Cancelled">Cancelled</option></select></div><div class="table-scroll"><table><thead><tr><th>Guest</th><th>Room</th><th>Check-in</th><th>Check-out</th><th>Guests</th><th>Total</th><th>Booked on</th><th>Status</th><th>Actions</th></tr></thead><tbody id="bookingRows"><tr><td colspan="9" class="empty-row">No demo reservations saved.</td></tr></tbody></table></div></div>
+      <div class="table-card admin-panel" id="stocksPanel" hidden><div class="table-heading"><h3>Room stocks remaining</h3><span class="pill">ROOM INVENTORY</span></div><div class="table-scroll"><table><thead><tr><th>Room type</th><th>Total rooms</th><th>Remaining stock</th><th>Reservations</th><th>Rate per night</th></tr></thead><tbody id="stockRows"><tr><td colspan="5" class="empty-row">Loading inventory…</td></tr></tbody></table></div><p class="calendar-note">Remaining stock decreases as demo reservations are saved. Inventory is stored only in this browser.</p></div>
+      <div class="table-card admin-panel" id="billsPanel" hidden><div class="table-heading"><h3>Annual bills</h3><span class="pill">BUDGET OVERVIEW</span></div><div class="table-scroll"><table><thead><tr><th>Year</th><th>Estimated bills</th></tr></thead><tbody><tr><td>2026</td><td>₱111,000</td></tr><tr><td>2027</td><td>₱120,111</td></tr><tr><td>2028</td><td>₱125,111</td></tr></tbody></table></div><p class="calendar-note">These are illustrative figures based on the sketch, not actual hotel accounts.</p></div>
+    </section>
+
+    <section class="section" id="policies"><div class="section-heading"><div><p class="eyebrow">BEFORE YOU BOOK</p><h2>Guest policies</h2></div><p class="muted">Helpful details for a smooth stay.</p></div><div class="widget-grid"><article class="info-widget"><span class="widget-icon" aria-hidden="true">↗</span><strong>Check-in & check-out</strong><p>Check-in begins at 2:00 PM. Please confirm your planned arrival time when booking. Check-out time should be confirmed with the property.</p></article><article class="info-widget"><span class="widget-icon" aria-hidden="true">↺</span><strong>Changes & cancellations</strong><p>This demo does not process real bookings. In a live hotel, contact the property directly to confirm its cancellation and rescheduling terms before booking.</p></article><article class="info-widget"><span class="widget-icon" aria-hidden="true">₱</span><strong>Rates & payment</strong><p>Displayed rates are sample prices for this school project. No payment is collected, and extra fees or deposits are not configured.</p></article></div><p class="calendar-note">Room amenities, prices, capacity, and policies should be confirmed by the property before a real stay.</p></section>
+
+    <section class="contact-strip" id="contact"><div><p class="eyebrow">WE'RE HERE FOR YOU</p><h2>Contact Casa Agustin.</h2><p class="muted">We look forward to welcoming you.</p></div><div class="contact-details"><a href="mailto:casaagustin@example.com">casaagustin@example.com</a><a href="tel:+639123456789">0912 345 6789</a><span>Address: Dasmariñas, Paliparan</span><a href="https://www.google.com/maps/search/?api=1&query=Dasmari%C3%B1as%20Paliparan" target="_blank" rel="noopener noreferrer">Get directions ↗</a><span>Contact details and address are sample project information.</span></div></section>
+  </main>
+  <footer><a class="brand" href="#home">CASA<span> AGUSTIN</span></a><span>Hotel Management School Project · Made with HTML, CSS & JavaScript</span></footer>
+
+  <dialog id="loginDialog"><form method="dialog" class="login-box"><button class="close-dialog" aria-label="Close">×</button><p class="eyebrow">ADMIN ACCESS</p><h2>Log in</h2><label for="username">Username</label><input id="username" placeholder="Enter username" autocomplete="username"><label for="password">Password</label><input id="password" type="password" placeholder="Enter password" autocomplete="current-password"><p class="form-note">Demo admin password: admin123</p><button class="primary-button full-button" id="loginSubmit" type="button">Log in</button><p id="loginMessage" class="message" aria-live="polite"></p></form></dialog>
+  <dialog id="confirmDialog"><div class="confirm-box"><span class="success-icon">✓</span><p class="eyebrow">RESERVATION SUMMARY</p><h2>Looks good!</h2><div id="confirmDetails"></div><p class="form-note">This is a practice website. Your reservation is not sent to a real hotel.</p><button class="primary-button full-button" id="confirmBooking">Save demo reservation</button><button class="text-button full-button" id="cancelConfirm">Go back and edit</button></div></dialog>
+  <dialog id="receiptDialog"><div class="confirm-box receipt-box"><button class="close-dialog" id="closeReceipt" aria-label="Close receipt">×</button><span class="success-icon">✓</span><p class="eyebrow">CASA AGUSTIN · RESERVATION RECEIPT</p><h2>Booking confirmed</h2><p class="muted receipt-number" id="receiptNumber"></p><div id="receiptDetails"></div><p class="receipt-thanks">Thank you for choosing Casa Agustin.</p><button class="primary-button full-button" id="printReceipt" type="button">Print receipt</button><button class="text-button full-button" id="doneReceipt" type="button">Done</button></div></dialog>
+  
+  
+  
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
