@@ -1,4 +1,3 @@
-// Beginner-friendly hotel booking demo.
 const bookingForm = document.getElementById('bookingForm');
 const checkIn = document.getElementById('checkIn');
 const checkOut = document.getElementById('checkOut');
@@ -14,7 +13,6 @@ const loginDialog = document.getElementById('loginDialog');
 let pendingBooking = null;
 let bookings = JSON.parse(localStorage.getItem('havenBookings') || '[]');
 
-// Set the earliest selectable date to today and block dates already booked for the selected room.
 const today = new Date();
 const todayString = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
 checkIn.min = todayString;
@@ -95,7 +93,6 @@ document.querySelectorAll('.choose-room').forEach(function (button) {
   });
 });
 
-// Clicking the room button scrolls to the booking form.
 document.getElementById('bookDeluxe').addEventListener('click', function () {
   document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
 });
@@ -166,7 +163,6 @@ bookingForm.addEventListener('submit', function (event) {
   confirmDialog.showModal();
 });
 
-// Keep user-entered text safe when showing it in the table.
 function escapeText(text) {
   return String(text).replace(/[&<>"']/g, function (character) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character];
@@ -273,7 +269,6 @@ document.querySelectorAll('.admin-tab').forEach(function (tab) {
   });
 });
 
-// Keep the page focused on guests and remove setup/school-project instructions.
     document.querySelectorAll('.form-note').forEach(function (note) {
       if (!note.textContent.includes('admin password')) note.remove();
     });
@@ -293,14 +288,12 @@ document.querySelectorAll('.admin-tab').forEach(function (tab) {
       item.remove();
     });
 
-// Keep the dashboard private from the guest-facing page; offer a discreet staff entry in the footer.
     (function () {
       const staffButton = document.createElement('button');
       staffButton.type = 'button'; staffButton.className = 'staff-access'; staffButton.textContent = 'Staff access';
       staffButton.addEventListener('click', function () { document.getElementById('loginDialog').showModal(); });
       document.querySelector('footer').appendChild(staffButton);
-
-      // A visible month calendar marks reserved nights for the selected room type.
+      
       const note = document.getElementById('availabilityNote');
       const calendar = document.createElement('div'); calendar.className = 'availability-calendar'; calendar.id = 'availabilityCalendar';
       note.insertAdjacentElement('afterend', calendar);
@@ -321,7 +314,6 @@ document.querySelectorAll('.admin-tab').forEach(function (tab) {
       const priorRenderBookings=renderBookings;renderBookings=function(){priorRenderBookings();render()};render();
     })();
 
-// Booking clarity and staff demo tools added for the HCI project.
     (function () {
       const money = function (amount) { return '₱' + Number(amount || 0).toLocaleString('en-PH'); };
       const baseAvailabilityCheck = isDateRangeAvailable;
@@ -342,7 +334,6 @@ document.querySelectorAll('.admin-tab').forEach(function (tab) {
       };
       updateTotal();
 
-      // Room-specific descriptions help guests compare the actual demo options.
       document.querySelectorAll('.room-card').forEach(function (card) {
         const heading = card.querySelector('h3');
         if (!heading) return;
@@ -419,7 +410,6 @@ document.querySelectorAll('.admin-tab').forEach(function (tab) {
         }
       });
 
-      // Make the demo receipt and booking details clearly identify their sample nature.
       const receiptNote = document.createElement('p');
       receiptNote.className = 'calendar-note';
       receiptNote.textContent = 'Demo receipt only — not a real hotel confirmation or proof of payment.';
